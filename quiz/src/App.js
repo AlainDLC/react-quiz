@@ -1,5 +1,12 @@
+import Header from "../src/component/Header";
+import DateCounter from "../src/component/DateCounter";
+
 function App() {
-  return <h1>Start</h1>;
+  return (
+    <div>
+      <DateCounter />
+    </div>
+  );
 }
 
 export default App;
