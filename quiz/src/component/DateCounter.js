@@ -27,7 +27,7 @@ function DateCounter() {
 
   // This mutates the date object.
   const date = new Date("june 21 2027");
-  date.setDate(date.getDate() + state);
+  date.setDate(date.getDate() + count);
 
   const dec = function () {
     // setCount((count) => count - 1);
@@ -53,6 +53,8 @@ function DateCounter() {
   const reset = function () {
     dispatch({ type: "reset" });
   };
+
+  console.log(date);
 
   return (
     <div className="counter">
