@@ -26,7 +26,7 @@ function DateCounter() {
   console.log(state);
 
   // This mutates the date object.
-  const date = new Date("june 21 2027");
+  const date = new Date("june 21 2090");
   date.setDate(date.getDate() + count);
 
   const dec = function () {
@@ -62,7 +62,7 @@ function DateCounter() {
         <input
           type="range"
           min="0"
-          max="10"
+          max="20"
           value={step}
           onChange={defineStep}
         />
